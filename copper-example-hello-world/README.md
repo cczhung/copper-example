@@ -35,7 +35,7 @@ Copper运行在Java7或者Java8
 
 - Copper的核心组件，用于执行工作流实例
 - 单进程运行
-- 有Transient（短暂）和Persistent（持久）两种工作流引擎
+- 有Transient（非持久）和Persistent（持久）两种工作流引擎
 
 ### *Workflow Repository 工作流仓库*
 
@@ -62,7 +62,7 @@ Copper运行在Java7或者Java8
 
 ```java
 /**
- * 创建短暂工作流引擎
+ * 创建非持久工作流引擎
  * @param sourceDir 工作流源码存放的路径
  * @param targetDir 编译后存放的路径
  * @return
@@ -82,7 +82,7 @@ public static TransientScottyEngine create(String sourceDir, String targetDir) {
 }
 ```
 
- - `TransientScottyEngine`继承于`ProcessingEngine`，是一个短暂工作流引擎
+ - `TransientScottyEngine`继承于`ProcessingEngine`，是一个非持久工作流引擎
  - `WorkflowRepository`工作流库存，需要指定源码和编译后的文件存放路径
  - `PojoDependencyInjector`实体依赖注入器，注册工作流定义中要注入的对象
 
@@ -99,7 +99,7 @@ public class HelloWorldWorkflow extends Workflow<HelloWorldData> {
 }
 ```
 
-- 所有短暂工作流都必须继承`Workflow`，并重写`main`方法
+- 所有非持久工作流都必须继承`Workflow`，并重写`main`方法
 - `HelloWorldData`必须实现`Serializable`接口，用于工作流内外部的交流
 
 ### *依赖注入*

@@ -1,8 +1,8 @@
 # Copper工作流引擎-HelloWorld
 
-[官网：http://copper-engine.org/](http://copper-engine.org/)
-
 > Copper是一个开源，强大，轻量，且易用的工作流引擎，使用Java代码描述工作流。
+
+[官网：http://copper-engine.org](http://copper-engine.org)
 
 ## 强大 - 高效率的工作流引擎
 
@@ -184,6 +184,22 @@ while (true) {
 - send CID NAME：打招呼
 - reply CID NAME：回应
 
-![HelloWorld测试](hello-world-test.png)
+```text
+[INFO] 2017-03-07 14:03:38 usage: list | run | send CID NAME | reply CID NAME
+please input ：
+run
+[INFO] 2017-03-07 14:04:00 Mapping workflow class 'com.example.workflow.HelloWorldWorkflow' to ticket pool DEFAULT
+please input ：
+[INFO] 2017-03-07 14:04:00 Init Workflow HELLO_WORLD: cid=1, status=PEND_SEND
+send 1 lily
+please input ：
+[INFO] 2017-03-07 14:04:06 com.example.workflow.HelloWorldWorkflow$1 created
+[INFO] 2017-03-07 14:04:06 Send Workflow HELLO_WORLD: cid=1, status=PEND_REPLY, sender=lily
+reply 1 lucy
+please input ：
+[INFO] 2017-03-07 14:04:12 Reply Workflow HELLO_WORLD: cid=1, status=DONE, sender=lily, replier=lucy
+list
+[INFO] 2017-03-07 14:04:15 Workflow HELLO_WORLD: cid=1, status=DONE, sender=lily, replier=lucy
+```
 
 *PS：本文使用的是copper-4.2.0*

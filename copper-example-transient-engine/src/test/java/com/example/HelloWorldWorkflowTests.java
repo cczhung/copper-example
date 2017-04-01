@@ -20,7 +20,7 @@ public class HelloWorldWorkflowTests {
         String sourceDir = getSourceDir(projectDir);
         String targetDir = getTargetDir(projectDir);
 
-        // 创建工作流引擎
+        // 创建工作流引擎，并启动
         ProcessingEngine engine = TransientEngineFactory.create(sourceDir, targetDir);
         engine.startup();
 

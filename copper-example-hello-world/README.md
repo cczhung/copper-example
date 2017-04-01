@@ -35,7 +35,7 @@ Copper运行在Java7或者Java8
 
 - Copper的核心组件，用于执行工作流实例
 - 单进程运行
-- 有Transient（非持久）和Persistent（持久）两种工作流引擎
+- 有Transient（非持久化）和Persistent（持久化）两种工作流引擎
 
 ### *Workflow Repository 工作流仓库*
 

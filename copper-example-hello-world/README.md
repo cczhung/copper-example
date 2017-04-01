@@ -1,4 +1,4 @@
-# Copper-HelloWorld（非持久工作流引擎）
+# Copper - HelloWorld
 
 > Copper是一个开源，强大，轻量，且易用的工作流引擎，使用Java代码描述工作流。
 

@@ -54,6 +54,7 @@ Copper运行在Java7或者Java8
 - 实现了简单常用的逐位跟踪
 
 ---
+
 ## Hello World
 
 ```java
@@ -99,6 +100,11 @@ public class HelloWorldWorkflowTests {
 
     ...
 }
+```
+
+```text
+[INFO] 2017-04-01 20:49:46 Workflow{def=HELLO_WORLD, cid=1}: Waiting
+[INFO] 2017-04-01 20:49:49 Workflow{def=HELLO_WORLD, cid=1}: Hello, I am the World
 ```
 
 *PS：本文使用的是copper-4.2.0*

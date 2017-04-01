@@ -1,8 +1,6 @@
 # Copper 工作流引擎
 
-> Copper是一个开源，强大，轻量，且易用的工作流引擎，使用Java代码描述工作流。
-
-[官网：http://copper-engine.org](http://copper-engine.org)
+> [Copper](http://copper-engine.org)是一个开源，强大，轻量，且易用的工作流引擎，使用Java代码描述工作流。
 
 ## 强大 - 高效率的工作流引擎
 
